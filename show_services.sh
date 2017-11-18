@@ -4,6 +4,6 @@
 #Version 1.0
 #Date : 27/11/2017
 
-for file in $(ls /etc/systemd/system);do
+for file in $(ls /etc/systemd/system |grep .service);do
   printf "$file\n"
 done
